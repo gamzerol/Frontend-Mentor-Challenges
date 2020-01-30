@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins&display=swap");
+body {
+  font-size: 15px;
+  font-family: 'Poppins', sans-serif;
+  color: #4c4e61;
+}
+
+body .header {
+  text-align: center;
+  line-height: 1.2rem;
+  margin-top: 2rem;
+}
+
+body .header .reliable {
+  color: #a3a5ae;
+  font-weight: 200;
+}
+
+body .header p {
+  width: 500px;
+  margin: 2rem auto;
+  color: #a3a5ae;
+  line-height: 1.5rem;
+}
+
+body .card {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  -ms-grid-rows: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+  grid-gap: 1rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 80%;
+  margin: auto;
+}
+
+body .card-supervisor, body .card-team, body .card-karma, body .card-calculator {
+  margin-left: 1rem;
+  padding: .5rem 1rem;
+  -webkit-box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px #fafafa;
+          box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px #fafafa;
+}
+
+body .card-supervisor img, body .card-team img, body .card-karma img, body .card-calculator img {
+  float: right;
+}
+
+body .card-supervisor {
+  border-top: 2px solid #45d3d3;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 1;
+  grid-area: 1/1/3/1;
+}
+
+body .card-team {
+  border-top: 2px solid #ea5353;
+  margin-bottom: 2rem;
+}
+
+body .card-karma {
+  border-top: 2px solid #fcaf4a;
+}
+
+body .card-calculator {
+  border-top: 2px solid #549ef2;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 3;
+  grid-area: 1/3/3/3;
+}
+
+body footer .attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+body footer .attribution a {
+  color: #3e52a3;
+}
+
+@media screen and (max-width: 376px) {
+  .header {
+    margin-bottom: 2rem;
+  }
+  .header .reliable {
+    line-height: 2rem;
+  }
+  .header p {
+    display: contents;
+  }
+  .card {
+    display: block !important;
+  }
+  .card-supervisor, .card-team, .card-karma, .card-calculator {
+    height: 200px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+  }
+  .card-supervisor img, .card-team img, .card-karma img, .card-calculator img {
+    width: 50px;
+  }
+}
+/*# sourceMappingURL=style.css.map */

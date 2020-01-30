@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
+body {
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+    color: hsl(234, 12%, 34%);
+
+    .header {
+        text-align: center;
+        line-height: 1.2rem;
+        margin-top: 2rem;
+        .reliable {
+            color: hsl(229, 6%, 66%);
+            font-weight: 200;
+        }
+        p {
+            width: 500px;
+            margin: 2rem auto;
+            color: hsl(229, 6%, 66%);
+            line-height: 1.5rem;
+        }
+    }
+    .card {
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: 1fr 1fr;
+        grid-gap: 1rem;
+        justify-content: center;
+        align-items: center;
+        width: 80%;
+        margin: auto;
+
+        &-supervisor, &-team, &-karma, &-calculator {
+            margin-left: 1rem;
+            padding: .5rem 1rem;
+            box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px hsl(0, 0%, 98%);
+            img {
+                float: right;
+            }
+        }
+        &-supervisor {
+            border-top: 2px solid hsl(180, 62%, 55%);
+            grid-area: 1/1/3/1;
+        }
+        &-team {
+            border-top: 2px solid hsl(0, 78%, 62%);
+            margin-bottom: 2rem;
+        }
+        &-karma {
+            border-top: 2px solid hsl(34, 97%, 64%);
+        }
+        &-calculator{
+            border-top: 2px solid hsl(212, 86%, 64%);
+            grid-area: 1/3/3/3;
+        }
+    }
+    footer {
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+    }
+}
+
+@media screen and (max-width: 376px) {
+    .header {
+        margin-bottom: 2rem;
+        .reliable {
+            line-height: 2rem;
+        }
+        p{
+            display: contents;
+        }       
+    }
+    .card {
+        display: block!important;
+
+        &-supervisor, &-team, &-karma, &-calculator {
+            height: 200px;
+            padding: 1rem;
+            margin-bottom: 1rem;
+            img {
+                width: 50px;
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
