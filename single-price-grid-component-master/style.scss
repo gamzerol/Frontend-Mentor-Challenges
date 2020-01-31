@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css?family=Karla&display=swap');
+body {
+    background-color: hsl(204, 43%, 93%);
+    .container {
+    font-family: 'Karla', sans-serif;
+    margin: 6rem auto;
+    width: 60%;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    
+    .about {
+        grid-area: 1/1/1/3;
+        padding: 2rem;
+        background-color: white;
+        border-top-right-radius: .5rem;
+        border-top-left-radius: .5rem;
+        h2 {
+            color: hsl(179, 62%, 43%)
+        }
+        &-free {
+            color: hsl(71, 73%, 54%)
+        }
+        &-desc {
+            color: hsl(218, 22%, 67%);
+        }
+    }
+    .price {
+        background-color: hsl(179, 62%, 43%);
+        color: white;
+        padding: 2rem;
+        border-bottom-left-radius: .5rem;
+        &-light {
+            font-size: 1rem;
+            font-weight: 200;
+            margin-left: 1rem;
+            color: hsla(203, 44%, 93%, 0.575);
+        }
+        &-btn {
+            width: 100%;
+            padding-top: 1rem;
+            padding-bottom: 1rem;
+            border-radius: .3rem;
+            background-color: hsl(71, 73%, 54%);
+            border: none;
+            color: white;
+        }
+    }
+    .content {
+        padding: 2rem;
+        color: white;
+        background-color: hsl(179, 57%, 55%);
+        font-size: 1.2rem;
+        border-bottom-right-radius: .5rem;
+
+        &-paragh {
+            font-size: .8rem;
+            line-height: 1.5rem;
+        }
+    }
+    }
+
+    footer {
+        .attribution { font-size: 11px; text-align: center; }
+        .attribution a { color: hsl(228, 45%, 44%); }
+    }
+}
+@media screen and (max-width: 376px) {
+    .container {
+        display: block!important;
+        width: 80%!important;
+        .about, .price, .content {
+            padding-left: 1rem!important;
+            padding-right: 1rem!important;
+        }
+    }
+}

@@ -1,0 +1,95 @@
+@import url("https://fonts.googleapis.com/css?family=Karla&display=swap");
+body {
+  background-color: #e5eff5;
+}
+
+body .container {
+  font-family: 'Karla', sans-serif;
+  margin: 6rem auto;
+  width: 60%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+}
+
+body .container .about {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: 1/1/1/3;
+  padding: 2rem;
+  background-color: white;
+  border-top-right-radius: .5rem;
+  border-top-left-radius: .5rem;
+}
+
+body .container .about h2 {
+  color: #2ab2af;
+}
+
+body .container .about-free {
+  color: #c0df34;
+}
+
+body .container .about-desc {
+  color: #98a6bd;
+}
+
+body .container .price {
+  background-color: #2ab2af;
+  color: white;
+  padding: 2rem;
+  border-bottom-left-radius: .5rem;
+}
+
+body .container .price-light {
+  font-size: 1rem;
+  font-weight: 200;
+  margin-left: 1rem;
+  color: rgba(229, 239, 245, 0.575);
+}
+
+body .container .price-btn {
+  width: 100%;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  border-radius: .3rem;
+  background-color: #c0df34;
+  border: none;
+  color: white;
+}
+
+body .container .content {
+  padding: 2rem;
+  color: white;
+  background-color: #4bcecb;
+  font-size: 1.2rem;
+  border-bottom-right-radius: .5rem;
+}
+
+body .container .content-paragh {
+  font-size: .8rem;
+  line-height: 1.5rem;
+}
+
+body footer .attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+body footer .attribution a {
+  color: #3e52a3;
+}
+
+@media screen and (max-width: 376px) {
+  .container {
+    display: block !important;
+    width: 80% !important;
+  }
+  .container .about, .container .price, .container .content {
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+  }
+}
+/*# sourceMappingURL=style.css.map */
