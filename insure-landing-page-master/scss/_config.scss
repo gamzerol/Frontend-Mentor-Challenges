@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css?family=DM+Serif+Display&display=swap');
+@import url('https://fonts.googleapis.com/css?family=DM+Serif+Display&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'DM Serif Display', serif;
+}
+h1 {
+    font-family: 'DM Serif Display', serif;
+    font-weight: 400;
+}
+
+@media screen and (max-width: 476px) {
+
+    .navbar-group {
+        display: none!important;
+    }
+    .section1 {
+        display: block!important;
+    }
+    .about {
+        margin: 0px 0px!important;
+    }
+}

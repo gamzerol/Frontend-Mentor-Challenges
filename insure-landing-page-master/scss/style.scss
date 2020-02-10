@@ -1,0 +1,172 @@
+@import 'config';
+
+.container {
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        padding: 1rem;
+        margin: 0rem 5rem;
+        &-logo {
+            font-size: 2rem;
+        }
+        &-group {
+            display: flex;
+            align-items: center;
+            text-transform: uppercase;
+            ul {
+                list-style: none;
+                li {
+                    float: left;
+                    margin-right: 1rem;
+                    color: hsl(273, 4%, 51%);
+                }
+            }
+            &-btn {
+                margin-left: 2rem;
+                text-transform: uppercase;
+                background-color: transparent;
+                border: 2px solid black;
+                padding: .5rem 1rem;
+                font-weight: 700;
+                cursor: pointer;
+            }
+        }
+    }
+    .section1 {
+        position: relative;
+        height: 750px;
+        .rightLines {
+            position: absolute;
+            right: 0;
+            z-index: 3;
+        }
+        &-blue {
+            background-color: hsl(256, 26%, 20%);
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            .leftLines {
+                    position: absolute;
+                    left: 0;
+                    top: 15rem;
+                }
+            &-text {
+                color: white;
+                width: 700px;
+                padding: 2rem 3rem;
+                margin-top: 4rem;
+                hr{
+                    width: 5rem;
+                }
+                
+                h1 {
+                    width: 350px;
+                    font-size: 3rem;
+                    margin-top: 2rem;
+                }
+                p{
+                    color: hsl(273, 4%, 51%);
+                    line-height: 1.5rem;
+                    padding-top: 3rem;
+                }
+            }
+        }
+        .image {
+            position: absolute;
+            top: 3rem;
+            right: 2rem;
+        }
+    }
+    .section2 {
+        padding: 0 2rem;
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 2rem;
+            color: hsl(270, 9%, 17%);
+        }
+        &-card {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            padding: 1rem 2rem;
+            grid-gap: 1rem;
+            img {
+                margin-bottom: 1rem;
+                align-self: center;
+            }
+            h4 {
+                color: hsl(216, 30%, 68%);
+                font-size: 1.2rem;
+                font-weight: 200;
+                padding-bottom: 1rem;
+            }
+            p {
+                color: hsl(273, 4%, 51%);
+                font-family: 'Roboto', sans-serif;
+                line-height: 1.5rem;
+            }
+        }
+    }
+    .about {
+        background-color: hsl(256, 26%, 20%);
+        margin: 4rem 5rem;
+        position: relative;
+        img {
+            width: 200px;
+            position: absolute;
+            right: 0;
+            top: 0;
+            overflow: hidden;
+        }
+        .text {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            padding: 6rem 3rem;
+            color: white;
+            h1 {
+                font-size: 2rem;
+            }
+            button {
+                width: 150px;
+                background-color: transparent;
+                border: 2px solid white;
+                color: white;
+                justify-self: end;
+                text-transform: uppercase;
+            }
+        }
+    }
+    .footer {
+        padding: 1rem 5rem;
+        
+        .social-links {
+            display: flex;
+            justify-content: space-between;
+
+        }
+        &-links {
+            text-transform: uppercase;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            margin-bottom: 1rem;
+            ul{
+                list-style: none;
+                justify-self: center;
+                .header {
+                    padding-bottom: 1rem;
+                    color: hsl(273, 4%, 51%);
+
+                }
+            }
+            
+        }
+    }
+    .attribution {
+        font-size: 11px;
+        text-align: center;
+        
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+}
+
+

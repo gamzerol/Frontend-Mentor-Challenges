@@ -1,0 +1,248 @@
+@import url("https://fonts.googleapis.com/css?family=DM+Serif+Display&display=swap");
+@import url("https://fonts.googleapis.com/css?family=DM+Serif+Display&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: 'DM Serif Display', serif;
+}
+
+h1 {
+  font-family: 'DM Serif Display', serif;
+  font-weight: 400;
+}
+
+@media screen and (max-width: 476px) {
+  .navbar-group {
+    display: none !important;
+  }
+  .section1 {
+    display: block !important;
+  }
+  .about {
+    margin: 0px 0px !important;
+  }
+}
+
+.container .navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 1rem;
+  margin: 0rem 5rem;
+}
+
+.container .navbar-logo {
+  font-size: 2rem;
+}
+
+.container .navbar-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-transform: uppercase;
+}
+
+.container .navbar-group ul {
+  list-style: none;
+}
+
+.container .navbar-group ul li {
+  float: left;
+  margin-right: 1rem;
+  color: #837d87;
+}
+
+.container .navbar-group-btn {
+  margin-left: 2rem;
+  text-transform: uppercase;
+  background-color: transparent;
+  border: 2px solid black;
+  padding: .5rem 1rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.container .section1 {
+  position: relative;
+  height: 750px;
+}
+
+.container .section1 .rightLines {
+  position: absolute;
+  right: 0;
+  z-index: 3;
+}
+
+.container .section1-blue {
+  background-color: #2d2640;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+}
+
+.container .section1-blue .leftLines {
+  position: absolute;
+  left: 0;
+  top: 15rem;
+}
+
+.container .section1-blue-text {
+  color: white;
+  width: 700px;
+  padding: 2rem 3rem;
+  margin-top: 4rem;
+}
+
+.container .section1-blue-text hr {
+  width: 5rem;
+}
+
+.container .section1-blue-text h1 {
+  width: 350px;
+  font-size: 3rem;
+  margin-top: 2rem;
+}
+
+.container .section1-blue-text p {
+  color: #837d87;
+  line-height: 1.5rem;
+  padding-top: 3rem;
+}
+
+.container .section1 .image {
+  position: absolute;
+  top: 3rem;
+  right: 2rem;
+}
+
+.container .section2 {
+  padding: 0 2rem;
+}
+
+.container .section2 h1 {
+  font-size: 3rem;
+  margin-bottom: 2rem;
+  color: #2b272f;
+}
+
+.container .section2-card {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  padding: 1rem 2rem;
+  grid-gap: 1rem;
+}
+
+.container .section2-card img {
+  margin-bottom: 1rem;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.container .section2-card h4 {
+  color: #95a9c6;
+  font-size: 1.2rem;
+  font-weight: 200;
+  padding-bottom: 1rem;
+}
+
+.container .section2-card p {
+  color: #837d87;
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.5rem;
+}
+
+.container .about {
+  background-color: #2d2640;
+  margin: 4rem 5rem;
+  position: relative;
+}
+
+.container .about img {
+  width: 200px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  overflow: hidden;
+}
+
+.container .about .text {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  padding: 6rem 3rem;
+  color: white;
+}
+
+.container .about .text h1 {
+  font-size: 2rem;
+}
+
+.container .about .text button {
+  width: 150px;
+  background-color: transparent;
+  border: 2px solid white;
+  color: white;
+  -ms-grid-column-align: end;
+      justify-self: end;
+  text-transform: uppercase;
+}
+
+.container .footer {
+  padding: 1rem 5rem;
+}
+
+.container .footer .social-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.container .footer-links {
+  text-transform: uppercase;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  margin-bottom: 1rem;
+}
+
+.container .footer-links ul {
+  list-style: none;
+  -ms-grid-column-align: center;
+      justify-self: center;
+}
+
+.container .footer-links ul .header {
+  padding-bottom: 1rem;
+  color: #837d87;
+}
+
+.container .attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.container .attribution a {
+  color: #3e52a3;
+}
+/*# sourceMappingURL=style.css.map */
