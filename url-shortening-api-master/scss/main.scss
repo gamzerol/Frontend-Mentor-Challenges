@@ -1,0 +1,191 @@
+@import 'config';
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 1rem;
+    &-logo {
+        font-size: 1.2rem;
+        font-weight: 700;
+        text-shadow: 3px 3px 3px rgba(0,0,0,0.5);
+    }
+    &-landing {
+        display: flex;
+        align-items: center;
+        ul {
+            list-style: none;
+            display: none;
+            li{
+                display: inline-block;
+            }
+        }
+        button {
+            border: 1px solid $gray;
+            padding: .3rem;
+            border-radius: .5rem;
+            cursor: pointer;
+        }
+        #login {
+            background-color: transparent;
+            
+        }
+        #singUp {
+            background-color: $cyan;
+            color: white;
+        }
+    }
+}
+.features {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 1rem;
+    position: relative;
+    &-group {
+        margin-bottom: 5rem;
+        display: flex;
+        flex-direction: column;
+    }
+    img {
+        width: 100%;
+    }
+    &-header {
+        @include headerText;
+    }
+    &-text {
+        @include paragh;
+    }
+    &-btn {
+        align-self: center;
+        margin-top: 2rem;
+        padding: .5rem;
+        border-radius: .5rem;
+        border: none;
+        background-color: $cyan;
+        color: white;
+        font-size: 1rem;
+    }
+    &-form {
+        margin-left: 2rem;
+        margin-right: 2rem;
+        border-radius: .5rem;
+        background-color: $darkViolet;
+        padding: 2rem 1rem;
+        position: absolute;
+        bottom: 0;
+        right: 40%;
+        transform: translate(50%, 50%);
+        form {
+            display: flex;
+            flex-direction: column;
+            input {
+                padding: .5rem;
+                border: none;
+            }
+            #submitBtn {
+                margin-top: 1rem;
+                background-color: $cyan;
+            }
+
+        }
+    }
+}
+.statistic {
+    background-color: $gray;
+    padding: 1rem;
+    padding-top: 7rem;
+    &-header {
+        @include headerText;
+    }
+    &-text {
+        @include paragh;
+        margin-bottom: 2rem;
+    }
+    .line {
+        width: 5px;
+        height: 30px;
+        background-color: $cyan;
+        margin: auto;
+    }
+    .card {
+        background-color: white;
+        position: relative;
+        margin-top: 1.5rem;
+        border-radius: 1rem;
+        img {
+            background-color: $darkViolet;
+            padding: .5rem;
+            border-radius: 50%;
+            position: absolute;
+            transform: translate(50%, -50%);
+            right: 50%;
+        }
+        &-header {
+            padding-top: 2.2rem;
+            text-align: center;
+            font-size: 1.1rem;
+        }
+        &-text {
+            padding: 1rem 2rem;
+        }
+    }
+}
+
+.getStarted {
+    padding: 2rem;
+    background: url('../../images/bg-boost-mobile.svg') center/cover no-repeat;
+    background-color: $darkViolet;
+    p {
+        color: white;
+        text-align: center;
+        font-size: 1.4rem;
+        margin-bottom: 1rem;
+    }
+    button {
+        display: block;
+        margin: auto;
+        padding: .5rem;
+        background-color: $cyan;
+        border: none;
+        border-radius: .5rem;
+        font-size: 1.1rem;
+        color: white;
+    }
+}
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 1rem;
+    background-color: $veryDarkViolet;
+    color: white;
+    p {
+        margin-top: 2rem;
+        font-size: 1.3rem;
+        font-weight: 700;
+        text-shadow: 3px 3px 6px rgba(0,0,0,0.9);
+
+    }
+    ul {
+        list-style: none;
+        margin-bottom: .5rem;
+        margin-top: 1rem;
+        li {
+            text-align: center;
+        }
+        li:not(:nth-child(1)) {          
+            color: $grayishViolet;
+        }
+    }
+    &-header {
+        font-weight: 700;
+    }
+    &-social i{
+        margin-right: 1rem;
+        font-size: 1.1rem;
+    }
+}
+.attribution {
+    background-color: white;
+    text-align: center;
+}

@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
+
+$red: hsl(0, 87%, 67%);
+$cyan: hsl(180, 66%, 49%);
+$darkViolet: hsl(257, 27%, 26%);
+$gray: hsl(0, 0%, 75%);
+$grayishViolet: hsl(257, 7%, 63%);
+$veryDarkGray: hsl(255, 11%, 22%);
+$veryDarkViolet: hsl(260, 8%, 14%);
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 12px;
+    max-width: 375px;
+}
+@mixin headerText {
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 1rem;
+    font-weight: 800;
+    color: $veryDarkGray;
+}
+@mixin paragh {
+    font-size: 1rem;
+    text-align: center;
+    margin-top: 2rem;
+}
+@media screen and (min-width: 450px) {
+    body {
+        min-width: 100%;
+        font-size: 16px;
+        .nav {
+            margin: 1rem 5rem;
+            &-logo {
+                font-size: 2rem;
+            }
+            &-landing {
+                #navList {
+                    display: flex;
+                    width: 600px;
+                    li {
+                        margin-right: 1rem;
+                    }
+                }
+            }
+        }
+
+        .features {
+            display: flex;
+            flex-direction: row-reverse;
+            margin: 0px 5rem;
+            img {
+                width: 40%;
+                height: 300px;
+            }
+            &-group {
+                width: 500px;
+                margin-right: 2rem;
+                .features-header {
+                    font-size: 3rem;
+                }
+            }
+            &-form {
+                width: 80%;
+                right: 45%;
+            }
+            
+        }
+        .statistic {
+            display: grid;
+            justify-content: center;
+            p {
+                width: 500px;
+                text-align: center;
+            }
+        }
+        .footer {
+            padding: 0px 2rem;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+    }
+    
+}
