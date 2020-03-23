@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css?family=Public+Sans&display=swap');
+:root {
+    --dark-blue: hsl(233, 8%, 62%);
+    --lime-green: hsl(136, 65%, 51%);
+    --bright-cyan: hsl(192, 70%, 51%);
+    --grayish-blue: hsl(233, 8%, 62%);
+    --light-grayish-blue: hsl(220, 16%, 96%);
+    --very-light-gray: hsl(0, 0%, 98%);
+    --white: hsl(0, 0%, 100%) ;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-size: 18px;
+    font-family: 'Public Sans', sans-serif;
+    min-height: 100vh;
+}
+.btn {
+    padding: .5rem .8rem;
+    border: none;
+    border-radius: 1rem;
+    background: linear-gradient(95deg, var(--lime-green), var(--bright-cyan));
+    text-transform: capitalize;
+    color: var(--white);
+    cursor: pointer;
+    &:hover {
+        box-shadow:0 0 5px rgba(0,0,0,0.8);
+    }
+}
+p {
+    color: var(--grayish-blue);
+    line-height: 1.5rem;
+}
+
+.showItems {
+    display: block!important;
+}
+
+// Mobile screen
+@media screen and (max-width: 414px) {
+    .navbar {
+        flex-direction: column;
+        padding: 1.5rem .5rem!important;
+        &-logo {
+            width: 300px!important;
+            .mobil-toggle {
+                cursor: pointer;
+                display: block!important;
+                .line {
+                    width: 25px;
+                    height: 3px;
+                    background-color: #000;
+                    margin-bottom: .3rem;
+                }
+            }
+        }
+        button {
+            display: none;
+        }
+        &-links{
+            width: 100%;
+            display: none;
+
+            ul {
+                flex-direction: column;
+                height: 140px;
+                justify-content: space-between;
+                margin-top: 1rem;
+                align-items: center;
+                border-top: 1px solid #5c5959;
+                border-bottom: 1px solid #5c5959;
+
+            }
+        }
+    }
+    .banner {
+        flex-direction: column-reverse;
+        &-right {
+            width: 100%!important;
+            padding-bottom: 15rem!important;
+            img {
+                transform: none!important;
+            }
+        }
+        &-left {
+            width: 100%!important;
+            margin-bottom: 2rem;
+        }
+    }
+    .section {
+        .card {
+            grid-template-columns: 1fr!important;
+        }
+    }
+    .articles {
+        &-card {
+            grid-template-columns: 1fr!important;
+        }
+    }
+    .footer {
+        grid-template-columns: 1fr!important;
+        text-align: center;
+        grid-gap: 1rem;
+        button {
+            margin-bottom: 1rem;
+        }
+    }
+
+}

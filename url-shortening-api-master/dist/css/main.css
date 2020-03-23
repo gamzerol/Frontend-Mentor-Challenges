@@ -221,6 +221,23 @@ body {
   background-color: #2acfcf;
 }
 
+.features-form .shorten__result {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  color: white;
+}
+
+.features-form .shorten__result-actions a {
+  color: white;
+  margin-right: 1rem;
+}
+
 .statistic {
   background-color: #bfbfbf;
   padding: 1rem;
