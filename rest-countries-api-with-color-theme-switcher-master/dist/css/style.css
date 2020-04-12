@@ -1,0 +1,104 @@
+:root {
+  --dark-mode-elements: hsl(209, 23%, 22%);
+  --dark-mode-background: hsl(207, 26%, 17%);
+  --light-mode-input: hsl(0, 0%, 52%);
+  --light-mode-background: hsl(0, 4%, 81%);
+  --light-mode-text: hsl(200, 15%, 8%);
+  --dark-text-elements: hsl(0, 0%, 100%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background: var(--light-mode-background);
+}
+
+.dark {
+  background: var(--dark-mode-background);
+  color: var(--dark-text-elements);
+}
+
+.element-background {
+  background-color: var(--dark-mode-elements) !important;
+}
+
+@media screen and (max-width: 414px) {
+  .section {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+}
+
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 2rem;
+  padding: 2rem 4rem;
+  background-color: var(--dark-text-elements);
+  -webkit-box-shadow: 3px 3px 3px #c3c0c0;
+          box-shadow: 3px 3px 3px #c3c0c0;
+}
+
+.header-mode {
+  cursor: pointer;
+}
+
+.filter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 2rem 4rem;
+  margin: 2rem 0;
+}
+
+.filter-name {
+  padding: .3rem;
+}
+
+.filter-country {
+  padding: .2rem;
+}
+
+.section {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 2rem 4rem;
+  grid-gap: 2rem;
+}
+
+.section .card {
+  background-color: var(--dark-text-elements);
+  border-bottom-left-radius: .5rem;
+  border-bottom-right-radius: .5rem;
+  -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+          box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+
+.section .card img {
+  width: 280px;
+}
+
+.section .card-info {
+  padding: 1rem .5rem;
+}
+/*# sourceMappingURL=style.css.map */

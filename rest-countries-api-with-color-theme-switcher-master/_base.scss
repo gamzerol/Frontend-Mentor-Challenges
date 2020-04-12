@@ -1,0 +1,28 @@
+:root {
+  --dark-mode-elements: hsl(209, 23%, 22%);
+  --dark-mode-background: hsl(207, 26%, 17%);
+  --light-mode-input: hsl(0, 0%, 52%);
+  --light-mode-background: hsl(0, 4%, 81%);
+  --light-mode-text: hsl(200, 15%, 8%);
+  --dark-text-elements: hsl(0, 0%, 100%);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: var(--light-mode-background);
+}
+.dark {
+  background: var(--dark-mode-background);
+  color: var(--dark-text-elements);
+}
+.element-background {
+  background-color: var(--dark-mode-elements) !important;
+}
+@media screen and (max-width: 414px) {
+  .section {
+    grid-template-columns: 1fr;
+  }
+}
